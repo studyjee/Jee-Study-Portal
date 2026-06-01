@@ -1,59 +1,116 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JEE Master Portal</title>
-
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JEE Study Portal</title><style>
 body{
-  background:#0f172a;
-  color:white;
-  font-family:Arial,sans-serif;
-  margin:0;
-  padding:20px;
+margin:0;
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
 }
-h1{
-  text-align:center;
+
+.header{
+background:#1e293b;
+padding:20px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
 }
+
+.container{
+padding:20px;
+}
+
 .card{
-  background:#1e293b;
-  padding:20px;
-  border-radius:12px;
-  margin-top:20px;
+background:#1e293b;
+padding:15px;
+border-radius:15px;
+margin-bottom:15px;
+cursor:pointer;
+transition:.3s;
 }
-a{
-  display:block;
-  background:#2563eb;
-  color:white;
-  text-decoration:none;
-  padding:10px;
-  margin:8px 0;
-  border-radius:8px;
+
+.card:hover{
+transform:scale(1.02);
 }
-</style>
-</head>
 
-<body>
+.subject{
+font-size:22px;
+font-weight:bold;
+}
 
-<h1>📚 JEE Master Portal</h1>
+.btn{
+display:block;
+text-decoration:none;
+background:#2563eb;
+color:white;
+padding:12px;
+border-radius:10px;
+margin:10px 0;
+text-align:center;
+}
 
-<div class="card">
-<h2>📘 Basic Maths</h2>
+.hidden{
+display:none;
+}
 
-<a href="https://youtu.be/tN2Lp7HQvXE?si=Wmc2ftnXQ5R1jmA6" target="_blank">
-Lecture 1
+details{
+margin-top:10px;
+background:#0b1220;
+padding:10px;
+border-radius:10px;
+}
+
+summary{
+cursor:pointer;
+font-size:18px;
+font-weight:bold;
+}
+</style><script>
+function showMaths(){
+document.getElementById("maths").style.display="block";
+}
+</script></head><body><div class="header">
+📚 JEE Study Portal
+</div><div class="container"><div class="card" onclick="showMaths()">
+<div class="subject">📘 Maths</div>
+</div><div class="card">
+<div class="subject">⚛️ Physics</div>
+Coming Soon
+</div><div class="card">
+<div class="subject">🧪 Chemistry</div>
+Coming Soon
+</div><div id="maths" class="hidden"><div class="card"><h2>📘 Basic Maths</h2><a class="btn" href="#lectures">🎥 Lectures</a>
+
+<a class="btn"
+href="https://drive.google.com/file/d/1C5a_pzpbgdpTQA9hGPcGrEUwx-xOfZJp/view?usp=drivesdk"
+target="_blank">
+📄 DPP
 </a>
 
-<a href="https://youtu.be/Q5upEzluEIo?si=pfifOZir4fAJ7-nI" target="_blank">
-Lecture 2
-</a>
+<a class="btn" href="#">
+📝 Notes
+</a><details id="lectures">
+<summary>🎥 Open Lectures (23)</summary><a class="btn" href="https://youtu.be/tN2Lp7HQvXE?si=Wmc2ftnXQ5R1jmA6" target="_blank">Lecture 1</a>
 
-<a href="https://drive.google.com/file/d/1C5a_pzpbgdpTQA9hGPcGrEUwx-xOfZJp/view?usp=drivesdk" target="_blank">
-DPP
-</a>
+<a class="btn" href="https://youtu.be/Q5upEzluEIo?si=pfifOZir4fAJ7-nI" target="_blank">Lecture 2</a>
 
-</div>
+<a class="btn" href="https://youtu.be/4t993bcj1yU?si=mF5_f-0WI6IjZv_e" target="_blank">Lecture 3</a>
 
-</body>
+<a class="btn" href="https://youtu.be/F7Fy6JbGNr8?si=RzpLqHou3NMh7OnT" target="_blank">Lecture 4</a>
+
+<a class="btn" href="https://youtu.be/dk-sTCuPIZY?si=j9Qy-iwPQrQim3Rk" target="_blank">Lecture 5</a>
+
+<a class="btn" href="https://youtu.be/zKYzxJz3PSk?si=S7tED46TqDYAS7I_" target="_blank">Lecture 6</a>
+
+<a class="btn" href="https://youtu.be/AZHQbH3UHko?si=yAnGako028TBxqh8" target="_blank">Lecture 7</a>
+
+<a class="btn" href="https://youtu.be/P7hJHd8g0Sc?si=Pzwo-8v662zf6wfX" target="_blank">Lecture 8</a>
+
+<a class="btn" href="https://youtu.be/FIs0g6jhDaU?si=JqF0bYvev-esDMbU" target="_blank">Lecture 9</a>
+
+<a class="btn" href="https://youtu.be/dr5KuixcPD8?si=qeYpqmN0VAhJZyBy" target="_blank">Lecture 10</a>
+
+</details></div></div></div></body>
 </html>
